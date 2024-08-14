@@ -53,3 +53,7 @@ jobs:
       run: bash ci/build-docker.sh
     - name: push docker
       run: bash ci/push-docker.sh
+    - name: Execute component test
+      run: bash ci/component-test.sh
+    - name: Execute performence test
+      run: bash ci/performence-test.sh
